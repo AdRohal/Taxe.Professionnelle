@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecElementImposable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="DecChomage.xsd">
+	
+	<identifiantFiscal>40128763</identifiantFiscal>
+	<exerciceFiscalDu>2022-01-01</exerciceFiscalDu>
+	<exerciceFiscalAu>2022-12-31</exerciceFiscalAu>
+	<annee>2022</annee>
+	<numTPLocaleDec>1223456</numTPLocaleDec>
+	<numTSCLocaleDec>85421628</numTSCLocaleDec>
+	<adressLocaleDec>22 RUE ICHBILIA, RABAT</adressLocaleDec>
+	
+	<listAcquisitionOuLocationTerrain>
+		<AcquisitionOuLocationTerrain>
+			<refNatureAcquision>
+				<code>TERRAIN_1</code>
+			</refNatureAcquision>
+                      <estImmatricule>1</estImmatricule>
+			<numTSC>5579</numTSC>
+			<numTF>5579</numTF>
+			<consistance> consistence 1</consistance>
+			<superficie>450.3</superficie>
+			<refStatutPatrimonial>
+				<code>PROPRIETE_1</code>
+			</refStatutPatrimonial>
+			<prixAcquision>1254220.12</prixAcquision>
+			<dateAcquisition>2020-01-01</dateAcquisition>
+		</AcquisitionOuLocationTerrain>
+	</listAcquisitionOuLocationTerrain>
+	
+	<listAcquisitionOuLocationMateriel>
+		<AcquisitionOuLocationMateriel>
+			<refDesignationMat>
+				<code>MAT_OUTIL_5</code>
+			</refDesignationMat>
+			<refEtatAcquision>
+				<code>NEUF_1</code>
+			</refEtatAcquision>
+			<refStatutPatrimonial>
+				<code>PROPRIETE_1</code>
+			</refStatutPatrimonial>
+			<dateAcquisition>2020-01-01</dateAcquisition>
+			<dateMiseEnService>2020-01-01</dateMiseEnService>
+			<prixAcquisition>1254220.12</prixAcquisition>
+						
+		</AcquisitionOuLocationMateriel>
+	</listAcquisitionOuLocationMateriel>
+	
+	<listRetraits>
+		<Retraits>
+			<designationRetrait>
+				<code>MAT_OUTIL_5</code>
+			</designationRetrait>
+			<natureOperationRetrait>
+				<code>RETRAIT_1</code>
+			</natureOperationRetrait>
+			
+			<numTSC>5579</numTSC>
+			<numTF>5579</numTF>
+			<prixAcquisition>1254220.12</prixAcquisition>
+			<prixCession>251220.12</prixCession>
+			<dateAcquisition>2020-01-01</dateAcquisition>
+			<dateRetrait>2020-01-01</dateRetrait>			
+		</Retraits>
+	</listRetraits>
+
+	
+</DecElementImposable>

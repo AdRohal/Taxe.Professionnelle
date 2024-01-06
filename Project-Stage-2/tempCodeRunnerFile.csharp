@@ -1,0 +1,46 @@
+using System;
+
+public class DeclarationElementImposable
+{
+    public string IdentifiantFiscal { get; set; }
+    public DateTime ExerciceFiscalDu { get; set; }
+    public DateTime ExerciceFiscalAu { get; set; }
+    public int Annee { get; set; }
+    public string NumTPLocaleDec { get; set; }
+    public string NumTSCLocaleDec { get; set; }
+    public string AdressLocaleDec { get; set; }
+
+    public string GenerateEDI()
+    {
+        string edi = string.Empty;
+
+        // DecElementImposable
+        edi += "<DecElementImposable>";
+
+        // Identification du contribuable
+        edi += "<identifiantFiscal>" + IdentifiantFiscal + "</identifiantFiscal>";
+
+        // Exercice fiscal du
+        edi += "<exerciceFiscalDu>" + ExerciceFiscalDu.ToString("yyyy/MM/dd") + "</exerciceFiscalDu>";
+
+        // Exercice fiscal au
+        edi += "<exerciceFiscalAu>" + ExerciceFiscalAu.ToString("yyyy/MM/dd") + "</exerciceFiscalAu>";
+
+        // Année
+        edi += "<annee>" + Annee.ToString() + "</annee>";
+
+        // N° d'identification à la Taxe professionnelle
+        edi += "<numTPLocaleDec>" + NumTPLocaleDec + "</numTPLocaleDec>";
+
+        // N° d'identification à la T.S.C
+        edi += "<numTSCLocaleDec>" + NumTSCLocaleDec + "</numTSCLocaleDec>";
+
+        // Adresse du local ou établissement concerné
+        edi += "<adressLocaleDec>" + AdressLocaleDec + "</adressLocaleDec>";
+
+        // Closing DecElementImposable
+        edi += "</DecElementImposable>";
+
+        return edi;
+    }
+}
